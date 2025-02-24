@@ -1,0 +1,171 @@
+{
+    "type": "object",
+    "properties": {
+        "fullName": {
+            "type": "string"
+        },
+        "nameWithInitials": {
+            "type": "string"
+        },
+        "dob": {
+            "type": "string",
+            "description": "format of the date is YYYY-MM-DD"
+        },
+        "age": {
+            "type": "string"
+        },
+        "nationality": {
+            "type": "string"
+        },
+        "gender": {
+            "type": "string",
+            "enum": [
+                "male",
+                "female"
+            ]
+        },
+        "address": {
+            "type": "string"
+        },
+        "mobile": {
+            "type": "string"
+        },
+        "district": {
+            "type": "string"
+        },
+        "gramaSevaka": {
+            "type": "string"
+        },
+        "nic": {
+            "type": "string"
+        },
+        "passport": {
+            "type": "string"
+        },
+        "emergency": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "address": {
+                    "type": "string"
+                },
+                "mobile": {
+                    "type": "string"
+                },
+                "relationship": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                }
+            }
+        },
+        "olResults": {
+            "type": "object",
+            "properties": {
+                "school": {
+                    "type": "string"
+                },
+                "year": {
+                    "type": "string"
+                },
+                "index": {
+                    "type": "string"
+                },
+                "results": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "subject": {
+                                "type": "string"
+                            },
+                            "grade": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "alResults": {
+            "type": "object",
+            "properties": {
+                "school": {
+                    "type": "string"
+                },
+                "year": {
+                    "type": "string"
+                },
+                "index": {
+                    "type": "string"
+                },
+                "zScore": {
+                    "type": "string"
+                },
+                "results": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "subject": {
+                                "type": "string"
+                            },
+                            "grade": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "otherQualifications": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "course": {
+                        "type": "string"
+                    },
+                    "nvqLevel": {
+                        "type": "string"
+                    },
+                    "institute": {
+                        "type": "string"
+                    },
+                    "year": {
+                        "type": "string"
+                    },
+                    "result": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "extraCurricularActivities": {
+            "type": "string"
+        },
+        "refrees": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "designation": {
+                        "type": "string"
+                    },
+                    "address": {
+                        "type": "string"
+                    },
+                    "mobile": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+[package]
+org = "dharshi"
+name = "intelligent_process_automation"
+version = "0.1.0"
+distribution = "2201.10.2"
+
+[build-options]
+observabilityIncluded = true
