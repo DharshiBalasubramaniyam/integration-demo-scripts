@@ -50,8 +50,7 @@ public function fill(types:Student data) returns error? {
     }
     check screen.keyPress(sikulix:ENTER);
     check screen.'type("\t" + data.gramaSevaka + "\t");
-    check screen.'type(data.nic ?: "" + "\t");
-    check screen.'type(data.passport ?: "" + "\t");
+    check screen.'type(data.nic + "\t");
     sikulix:Match nextBtnMatch = check screen.find(imagespath + "/next.png");
     check nextBtnMatch.click();
 

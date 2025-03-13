@@ -16,7 +16,7 @@ configurable int dbPort = ?;
 #
 # + data - data to be stored in the database.
 # + return - Returns `error` if an error occurs.
-public function storeInDatabase(types:Student data) returns error? {
+public function store(types:Student data) returns error? {
     mysql:Client db = check new (dbHost, dbUsername, dbPassword, dbName, dbPort);
 
     string student_id = uuid:createType1AsString();
@@ -26,8 +26,7 @@ public function storeInDatabase(types:Student data) returns error? {
     _ = check db->execute(`INSERT INTO student
                 VALUES (${student_id}, ${data.fullName}, ${data.nameWithInitials}, ${data.dob}, ${data.age},
                 ${data.nationality}, ${data.gender}, ${data.address}, ${data.mobile},
-                ${data.district}, ${data.gramaSevaka}, ${data.nic},
-                ${data.passport});`);
+                ${data.district}, ${data.gramaSevaka}, ${data.nic});`);
 
     _ = check db->execute(`INSERT INTO emergencycontact (name, address, mobile, relationship, email, studentId)
                 VALUES (${data.emergency.name}, ${data.emergency.address}, ${data.emergency.mobile}, ${data.emergency.relationship}, ${data.emergency.email},

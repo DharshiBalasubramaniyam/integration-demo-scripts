@@ -52,8 +52,7 @@ public type Student record {
     string mobile;
     string district;
     string gramaSevaka;
-    string? nic;
-    string? passport;
+    string nic;
     Emergency emergency;
     OlResults olResults;
     AlResults alResults;

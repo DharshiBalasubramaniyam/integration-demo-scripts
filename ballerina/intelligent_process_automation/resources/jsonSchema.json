@@ -39,9 +39,6 @@
         "nic": {
             "type": "string"
         },
-        "passport": {
-            "type": "string"
-        },
         "emergency": {
             "type": "object",
             "properties": {

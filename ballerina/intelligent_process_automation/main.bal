@@ -21,7 +21,7 @@ public function main() returns error? {
 
     // Use case 1
     io:println("Storing data in the database...");
-    check db:storeInDatabase(data);
+    check db:store(data);
 
     // Use case 2
     io:println("Filling the form in the web application...");

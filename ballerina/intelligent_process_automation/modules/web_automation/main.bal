@@ -46,10 +46,7 @@ public function fill(types:Student data) returns error? {
     check gramaSevakaElement.sendKeys(data.gramaSevaka);
 
     selenium:WebElement nicElement = check driver.findById("nic");
-    check nicElement.sendKeys(data.nic ?: "");
-
-    selenium:WebElement passportElement = check driver.findById("passport");
-    check passportElement.sendKeys(data.passport ?: "");
+    check nicElement.sendKeys(data.nic);
 
     // Fill emergency contact details
     selenium:WebElement emerNameElement = check driver.findById("emer-name");

@@ -70,8 +70,7 @@ CREATE TABLE `student` (
   `mobile` varchar(15) DEFAULT NULL,
   `district` varchar(100) DEFAULT NULL,
   `gramaSevaka` varchar(100) DEFAULT NULL,
-  `nic` varchar(20) DEFAULT NULL,
-  `passport` varchar(20) DEFAULT NULL
+  `nic` varchar(20) DEFAULT NULL
 );
 
 ALTER TABLE `alresultdetails`
